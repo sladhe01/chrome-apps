@@ -15,7 +15,7 @@ function handleLoginForm(event) {
 
 const paintGreetings = (name) => {
   greeting.classList.remove(INVISIBLE_CLASSNAME);
-  greeting.classList.innerText = `Welcome ${name}`;
+  greeting.innerText = `Welcome ${name}`;
 };
 
 const existingUsername = localStorage.getItem(USERNAME_KEY);
